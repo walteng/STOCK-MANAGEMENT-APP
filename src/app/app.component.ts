@@ -2,7 +2,7 @@ import{Component} from "@angular/core";
 @Component({
   selector:"pm-root",
   template:`
-  <a class='navbar-brand'>{{pageTitle}}</a>
+  <div class="text-center">{{pageTitle| uppercase}}</div>
   <nav class='navbar navbar-expand navbar-light bg-light'>
 
   <ul class='nav nav-pills'>
@@ -15,5 +15,5 @@ import{Component} from "@angular/core";
   </div>
   `})
 export class AppComponent{
-  pageTitle: string = "Acme Product Management";
+  pageTitle: string = "Safety Stock Management";
 }
